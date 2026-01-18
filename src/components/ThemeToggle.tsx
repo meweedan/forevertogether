@@ -43,14 +43,13 @@ export default function ThemeToggle({ className }: ThemeToggleProps) {
     <button
       type="button"
       onClick={toggle}
-      color="#821d30"
       className={
-        "logo-pill glass shadow-soft text-sm font-semibold " +
+        "logo-pill glass shadow-soft text-sm font-semibold text-[var(--burgundy-700)] dark:text-[var(--burgundy-200)] " +
         (className ? className : "")
       }
       aria-label="Toggle dark mode"
     >
-      {theme === "dark" ? <Sun /> : <Moon />}
+      {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
     </button>
   );
 }
