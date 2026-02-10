@@ -201,7 +201,7 @@ export default function ValentineGame() {
     const d = parseInt(birthdayInput.day);
     const m = parseInt(birthdayInput.month);
     const y = parseInt(birthdayInput.year);
-    if (d === 4 && m === 11 && y === 2003) {
+    if (d === 4 && m === 11 && y === 2002) {
       setBirthdayError(false);
       setStage("valentine");
     } else {
